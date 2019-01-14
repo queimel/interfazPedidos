@@ -14,49 +14,57 @@
 
 <body>
 
-    <div id="login-page" class="row">
-        <div class="col s12 center-align">
-            <h3 class="header red-text darken-2">Restaurante X</h3>
-        </div>
-        <div class="col s12 z-depth-6 card-panel center-align">
 
-            <form class="login-form">
-                <div class="row">
-                    <h5 class="teal-text">Sistema de pedidos</h5>
+    <div class="section"></div>
+    <main>
+      <center>
+        <div class="section"></div>
+  
+        <h5 class="indigo-text">Restaurante X</h5>
+        <div class="section"></div>
+  
+        <div class="container">
+          <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+  
+            <form class="col s12" method="post" action="seleccionarMesa.html">
+              <div class='row'>
+                <div class='col s12'>
                 </div>
-                <div class="row">
-                    <div class="input-field col s11">
-                        <i class="material-icons prefix">mail_outline</i>
-                        <input class="validate" id="email" type="email">
-                        <label for="email" data-error="wrong" data-success="right">Email</label>
-                        <span class="helper-text" data-error="Ingrese un email con el formato correcto" data-success="">Ingrese su email</span>
-                    </div>
+              </div>
+  
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='email' name='email' id='email' />
+                  <label for='email'>Ingresa tu email</label>
+                  <span class="helper-text" data-error="Ingrese un email valido!" data-success="Email Valido"></span>
                 </div>
-                <div class="row">
-                    <div class="input-field col s11">
-                        <i class="material-icons prefix">lock_outline</i>
-                        <input id="password" type="password">
-                        <label for="password">Password</label>
-                    </div>
+              </div>
+  
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='password' name='password' id='password' />
+                  <label for='password'>Ingresa tu password</label>
+                  <span class="helper-text" data-error="Contraseña incorrecta"></span>
                 </div>
-
-                <div class="row">
-                    <div class="input-field col s11 center-align">
-                        <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Login
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
+                <label style='float: right;'>
+                    <a class='pink-text' href='#!'><b>Olvidaste tu Password?</b></a>
+                </label>
+              </div>
+  
+              <br />
+              <center>
+                <div class='row'>
+                  <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
                 </div>
-                <div class="row">
-
-                    <div class="input-field col s6 m6 l6 right-align">
-                        <p class="margin right-align medium-small"><a href="#">Olvidaste tu password?</a></p>
-                    </div>
-                </div>
-
+              </center>
             </form>
+          </div>
         </div>
-    </div>
+      </center>
+  
+      <div class="section"></div>
+      <div class="section"></div>
+    </main>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.js"></script>
 </body>
